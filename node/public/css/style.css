@@ -1,0 +1,16 @@
+.TestBig {
+    font-size: medium;
+    background-color: brown;
+    margin: 2px;
+}
+
+.MarginTop {
+    margin: 50px;
+}
+
+.loginPanel {
+    width: 320px;
+    margin-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+}
