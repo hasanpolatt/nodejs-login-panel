@@ -33,9 +33,19 @@ npm install express-ejs-layouts --save
 ```
 npm install body-parser --save
 ```
+```
+npm install mongoose --save
+```
 
 ## Start
 To run the project;
 
 ```
 npm start
+```
+
+After installing NPM modules you can run the site locally by typing "localhost:8000" in your browser.
+
+The "userlist" page will not open because it cannot pull any information from the database(MongoDB).
+
+
