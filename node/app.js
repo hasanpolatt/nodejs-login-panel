@@ -5,6 +5,8 @@ var bodyParser = require('body-parser');
 //creating express
 var exp = express();
 var layouts = require('express-ejs-layouts');
+var db = require('./appserver/models/db');
+var User = require('./appserver/models/user');
 
 
 //app.js
@@ -27,6 +29,23 @@ exp.use(function(req, res, next) {
 
 //adding routers
 require('./appserver/routes/Manager')(exp);
+
+var newUser = new User( {
+    name: 'Hasan',
+    surname: 'Polat',
+    email: 'hasan@hasan.com',
+    username: 'hasanpolat',
+    password: '12345'
+});
+
+newUser.save(function(err) {
+    if(err) {
+        console.log(err);
+    }
+    else {
+        console.log('user connected');
+    }
+});
 
 exp.listen(8000);
 
