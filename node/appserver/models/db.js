@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-mongoose.Promise = require('bluebird');
+var user = require('./user');
 
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
