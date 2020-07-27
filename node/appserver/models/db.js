@@ -10,7 +10,7 @@ mongoose.set('useUnifiedTopology', true);
 
 var mongoDB = 'mongodb://localhost/NodeProject';
 
-mongoose.connect('mongoDB', function(err, err) {
+mongoose.connect(mongoDB, function(err) {
     if(err) {
         console.log('mongoose error' + err);
     }
